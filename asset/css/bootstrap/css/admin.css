@@ -1,0 +1,144 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    height: auto;
+    background-color: rgb(233, 218, 218);
+    padding: 10px 0px 0px 0px;
+}
+
+.header::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.header .searching {
+    width: 30%;
+    opacity: 0.7;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    float: left;
+}
+
+.fa-camera-retro {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    float: left;
+    font-size: 27px;
+}
+
+.form-searching {
+    position: absolute;
+    left: 25%;
+    float: right;
+    font-size: 18px;
+    width: 70%;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.btn-searching {
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background: rgb(43, 38, 38);
+    display: flex;
+    justify-content: center;
+    /* can giua theo hang ngang */
+    align-items: center;
+    /* chinh theo huong vuong goc */
+}
+
+.search-txt {
+    background: none;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 16px;
+    padding: 0px 8px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 70%;
+    border: none;
+    color: black;
+}
+
+.header .main-choice {
+    width: 35%;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header .main-choice a {
+    width: 25%;
+    padding: 0 4%;
+    color: gray;
+    font-weight: bold;
+}
+
+.header .main-choice button {
+    color: gray;
+    font-weight: bold;
+    border: none;
+}
+
+.header .out-in {
+    width: 30%;
+    float: right;
+    margin-top: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header .out-in a {
+    padding: 0 4%;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header .adding {
+    width: 7%;
+    float: right;
+    display: none;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 5px;
+    border: none;
+}
+
+@media (max-width:900px) {
+    .header .adding {
+        display: block;
+    }
+    .header .main-choice,
+    .header .out-in {
+        display: none;
+        float: none;
+        text-align: center;
+        margin-left: 20%;
+    }
+    .header .searching {
+        width: 70%;
+    }
+    .main-choice a,
+    .header .out-in a {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+}
+
+.DanhMuc {
+    width: 40%;
+}

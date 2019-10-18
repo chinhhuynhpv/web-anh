@@ -1,0 +1,217 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: darkturquoise;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+
+#header {
+    position: relative;
+    background-image: url(../../images/bgmain.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+#header .link {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.link a {
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.link button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.link a:hover {
+    color: orange;
+}
+
+.searching {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    height: 40px;
+    border-radius: 40px;
+    background-color: orange;
+}
+
+.btn-searching {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background: rgb(43, 38, 38);
+    display: flex;
+    justify-content: center;
+    /* can giua theo hang ngang */
+    align-items: center;
+    /* chinh theo huong vuong goc */
+}
+
+.search-txt {
+    background: none;
+    border: none;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 16px;
+    padding: 0px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.searching:hover .search-txt {
+    width: 240px;
+    transition: 0.3s;
+    padding-left: 10px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/108FontsSVN/SVN-Transformer.ttf);
+}
+
+.slogan {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: myFirstfont;
+}
+
+.container {
+    padding-top: 20px;
+    height: auto;
+    padding: 0 -15 0 -15px;
+}
+
+.title-photos {
+    font-size: 24px;
+}
+
+.row {
+    display: block;
+    padding: 0px;
+    height: auto;
+}
+
+.row .col-sm-3 a {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: content-box;
+}
+
+.col-sm-3 a img {
+    object-fit: cover;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-sm-3 a .related {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    display: none;
+    color: orange;
+}
+
+.col-sm-3 a:hover>.related {
+    display: block;
+    z-index: 1;
+}
+
+.contact {
+    font-size: 21px;
+}
+
+@media (max-width:768px) {
+    .searching:hover .search-txt {
+        width: 140px;
+        transition: 0.3s;
+        padding-left: 10px;
+    }
+    .searching {
+        top: 60%;
+    }
+    .col-sm-3 {
+        width: 50%;
+    }
+}
+
+.select-image {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.select-image h1 {
+    width: 30%;
+    float: left;
+}
+
+.select-image .selection-type-pro {
+    width: 70%;
+    float: right;
+    border: 1px solid red;
+    background-color: blueviolet;
+}
+
+.select-image::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.mr-auto>li :hover a {
+    ba
+}
+
+@media only screen and (max-width:980px)and ( min-width:640px) {
+    .col-sm-3 {
+        width: 50%;
+    }
+    .col-sm-3 a img {
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width:639px) {
+    .col-sm-3 a img {
+        height: 100%;
+    }
+}
+
+.contact>p {
+    color: white;
+    text-align: center;
+}
