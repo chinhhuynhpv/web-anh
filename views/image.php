@@ -43,7 +43,7 @@
             </a>
         </button>
         <div class="main-choice" id="main-choice">
-            <a href="#home" >Categories</a>
+            <a href="#home" >Categories Categories</a>
             <a href="#news">Trending</a>
             <a href="#contact">Choice</a>
             <button><i class="fas fa-ellipsis-h"></i></button>
